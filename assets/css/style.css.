@@ -1,1 +1,43 @@
+:root {
+    --bg-dark: #0A0A0B;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --neon-cyan: #00f3ff;
+    --neon-violet: #bc13fe;
+    --text-main: #e0e0e0;
+    --border-glass: rgba(255, 255, 255, 0.1);
+}
 
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+.btn-neon {
+    background: transparent;
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+.btn-neon:hover {
+    background: var(--neon-cyan);
+    color: #000;
+    box-shadow: 0 0 25px var(--neon-cyan);
+}
